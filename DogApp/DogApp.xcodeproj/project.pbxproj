@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		73BBDE392B7E96610004B450 /* DogBreedImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BBDE382B7E96610004B450 /* DogBreedImageModel.swift */; };
 		73E7CAAB2B7BFD140072A427 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E7CAAA2B7BFD140072A427 /* AppDelegate.swift */; };
 		73E7CAAD2B7BFD140072A427 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E7CAAC2B7BFD140072A427 /* SceneDelegate.swift */; };
 		73E7CAB22B7BFD140072A427 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73E7CAB02B7BFD140072A427 /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 		73E7CAFD2B7C2DB30072A427 /* IDogBreedImagesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E7CAFC2B7C2DB30072A427 /* IDogBreedImagesRepository.swift */; };
 		73E7CAFF2B7C2E490072A427 /* DogBreedImagesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E7CAFE2B7C2E490072A427 /* DogBreedImagesDataSource.swift */; };
 		73E7CB012B7C2F9F0072A427 /* IDogBreedImagesIntToPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E7CB002B7C2F9F0072A427 /* IDogBreedImagesIntToPresenter.swift */; };
+		73E7CB032B7D11320072A427 /* DogBreedImagesResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E7CB022B7D11320072A427 /* DogBreedImagesResponseModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		73BBDE382B7E96610004B450 /* DogBreedImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogBreedImageModel.swift; sourceTree = "<group>"; };
 		73E7CAA72B7BFD140072A427 /* DogApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DogApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73E7CAAA2B7BFD140072A427 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73E7CAAC2B7BFD140072A427 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +78,7 @@
 		73E7CAFC2B7C2DB30072A427 /* IDogBreedImagesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDogBreedImagesRepository.swift; sourceTree = "<group>"; };
 		73E7CAFE2B7C2E490072A427 /* DogBreedImagesDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogBreedImagesDataSource.swift; sourceTree = "<group>"; };
 		73E7CB002B7C2F9F0072A427 /* IDogBreedImagesIntToPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDogBreedImagesIntToPresenter.swift; sourceTree = "<group>"; };
+		73E7CB022B7D11320072A427 /* DogBreedImagesResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogBreedImagesResponseModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +193,8 @@
 		73E7CAE02B7BFDB20072A427 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				73E7CB022B7D11320072A427 /* DogBreedImagesResponseModel.swift */,
+				73BBDE382B7E96610004B450 /* DogBreedImageModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -369,7 +375,9 @@
 				73E7CAF02B7C16CF0072A427 /* DogBreedImagesRepository.swift in Sources */,
 				73E7CAF62B7C1A300072A427 /* DogBreedImagesViewCell.swift in Sources */,
 				73E7CAEA2B7C15D40072A427 /* DogBreedImagesView.swift in Sources */,
+				73E7CB032B7D11320072A427 /* DogBreedImagesResponseModel.swift in Sources */,
 				73E7CAF32B7C19A50072A427 /* CollectionViewDelegate.swift in Sources */,
+				73BBDE392B7E96610004B450 /* DogBreedImageModel.swift in Sources */,
 				73E7CAFF2B7C2E490072A427 /* DogBreedImagesDataSource.swift in Sources */,
 				73E7CAB52B7BFD140072A427 /* DogApp.xcdatamodeld in Sources */,
 				73E7CAAD2B7BFD140072A427 /* SceneDelegate.swift in Sources */,

@@ -9,4 +9,10 @@ import Foundation
 
 protocol IDogBreedImagesRepository {
   
+  func getDogBreedImages(completion: @escaping (_ response: DogBreedImagesResponseModel) -> Void)
+  
+  func fetchImage(from url: URL, completion: @escaping (_ data: Data) -> Void)
+  
+  func fetchLikes(_ appDelegate: AppDelegate) -> [LikeModel]?
+  
 }

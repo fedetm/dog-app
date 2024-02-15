@@ -9,4 +9,6 @@ import Foundation
 
 protocol IDogBreedImagesInteractor {
   
+  func getDogBreedImages(_ appDelegate: AppDelegate, completion: @escaping (_ dogBreedImages: [DogBreedImageModel]) -> Void)
+  
 }

@@ -9,4 +9,6 @@ import Foundation
 
 protocol IDogBreedImagesPresenter {
   
+  func getDogBreedImages()
+  
 }
