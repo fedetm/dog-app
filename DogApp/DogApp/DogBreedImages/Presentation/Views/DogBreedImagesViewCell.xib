@@ -21,7 +21,7 @@
                         <rect key="frame" x="136" y="0.0" width="128" height="155.33333333333334"/>
                     </imageView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eTQ-Wb-v0c">
-                        <rect key="frame" x="0.0" y="155.33333333333334" width="400" height="74"/>
+                        <rect key="frame" x="0.0" y="155.33333333333334" width="400" height="66"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HZJ-eR-kME">
                                 <rect key="frame" x="0.0" y="4" width="50.666666666666664" height="34.333333333333336"/>
@@ -53,7 +53,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="fSU-tJ-WB4" firstAttribute="top" secondItem="HZJ-eR-kME" secondAttribute="bottom" constant="4" id="6p5-g8-x5C"/>
-                            <constraint firstAttribute="bottom" secondItem="fSU-tJ-WB4" secondAttribute="bottom" constant="16" id="7Y5-Or-pQF"/>
+                            <constraint firstAttribute="bottom" secondItem="fSU-tJ-WB4" secondAttribute="bottom" constant="8" id="7Y5-Or-pQF"/>
                             <constraint firstItem="HZJ-eR-kME" firstAttribute="leading" secondItem="eTQ-Wb-v0c" secondAttribute="leading" id="8VP-o1-GR6"/>
                             <constraint firstItem="oBB-jt-GVx" firstAttribute="centerX" secondItem="HZJ-eR-kME" secondAttribute="centerX" id="PE7-FB-3yX"/>
                             <constraint firstItem="HZJ-eR-kME" firstAttribute="top" secondItem="eTQ-Wb-v0c" secondAttribute="top" constant="4" id="lp0-La-1JH"/>

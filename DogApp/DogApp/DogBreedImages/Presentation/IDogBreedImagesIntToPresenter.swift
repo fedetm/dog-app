@@ -9,6 +9,4 @@ import Foundation
 
 protocol IDogBreedImagesIntToPresenter: AnyObject {
   
-  
-  
 }

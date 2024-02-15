@@ -16,10 +16,22 @@ class DogBreedImagesView: UIViewController {
   var dogBreedUIImages = [UIImage]()
   var dogBreedImages = [DogBreedImageModel]()
   
+  var activityIndicator: UIActivityIndicatorView!
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     initDogBreedImagesModule()
+    configureActivityIndicator()
     presenter.getDogBreedImages()
+  }
+  
+  func configureActivityIndicator() {
+    activityIndicator = UIActivityIndicatorView(style: .large)
+    activityIndicator.color = .gray
+    
+    activityIndicator.center = view.center
+    
+    view.addSubview(activityIndicator)
   }
   
   func initDogBreedImagesModule() {
@@ -38,6 +50,8 @@ class DogBreedImagesView: UIViewController {
       collectionView.delegate = self.collectionViewDelegate
       collectionView.dataSource = self.collectionViewDelegate
       collectionView.register(UINib(nibName: "DogBreedImagesViewCell", bundle: nil), forCellWithReuseIdentifier: "DogBreedImagesViewCell")
+      view.alpha = 1.0
+      activityIndicator.stopAnimating()
     }
   }
   

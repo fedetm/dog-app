@@ -19,6 +19,8 @@ class DogBreedImagesPresenter: IDogBreedImagesPresenter, IDogBreedImagesIntToPre
   }
   
   func getDogBreedImages() {
+    view.activityIndicator.startAnimating()
+    view.view.alpha = 0.5
     let appDelegate = (UIApplication.shared.delegate as! AppDelegate)
     interactor.getDogBreedImages(appDelegate) { [weak self] dogBreedImages in
       var dogBreedUIImages = [UIImage]()
