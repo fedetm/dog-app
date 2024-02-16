@@ -16,57 +16,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="POB-Vr-W15">
-                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CIy-dl-cjR" userLabel="Content View">
+                                <rect key="frame" x="0.0" y="103" width="393" height="749"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CIy-dl-cjR" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="1000"/>
-                                        <subviews>
-                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" prefetchingEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dEL-yo-c5D">
-                                                <rect key="frame" x="0.0" y="0.0" width="393" height="1000"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="cFS-7O-kmD">
-                                                    <size key="itemSize" width="128" height="128"/>
-                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                </collectionViewFlowLayout>
-                                                <cells/>
-                                            </collectionView>
-                                        </subviews>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" prefetchingEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dEL-yo-c5D">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="749"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="dEL-yo-c5D" secondAttribute="trailing" id="0oz-gh-4qH"/>
-                                            <constraint firstAttribute="bottom" secondItem="dEL-yo-c5D" secondAttribute="bottom" id="91r-9l-bqy"/>
-                                            <constraint firstItem="dEL-yo-c5D" firstAttribute="leading" secondItem="CIy-dl-cjR" secondAttribute="leading" id="d7q-UG-WQd"/>
-                                            <constraint firstItem="dEL-yo-c5D" firstAttribute="top" secondItem="CIy-dl-cjR" secondAttribute="top" id="qau-Ei-w3u"/>
-                                            <constraint firstAttribute="height" constant="1000" id="qpw-pN-yty"/>
-                                        </constraints>
-                                    </view>
+                                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="cFS-7O-kmD">
+                                            <size key="itemSize" width="128" height="128"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells/>
+                                    </collectionView>
                                 </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstItem="CIy-dl-cjR" firstAttribute="leading" secondItem="koq-DK-9LJ" secondAttribute="leading" id="4Tr-Re-Gs2"/>
-                                    <constraint firstItem="CIy-dl-cjR" firstAttribute="bottom" secondItem="koq-DK-9LJ" secondAttribute="bottom" id="7r7-Sj-Xf5"/>
-                                    <constraint firstItem="CIy-dl-cjR" firstAttribute="trailing" secondItem="koq-DK-9LJ" secondAttribute="trailing" id="O5x-bL-pQg"/>
-                                    <constraint firstItem="CIy-dl-cjR" firstAttribute="width" secondItem="b6Z-yB-JQx" secondAttribute="width" id="cVV-EH-P6F"/>
-                                    <constraint firstItem="CIy-dl-cjR" firstAttribute="top" secondItem="koq-DK-9LJ" secondAttribute="top" id="hZO-vb-VL7"/>
+                                    <constraint firstItem="dEL-yo-c5D" firstAttribute="leading" secondItem="CIy-dl-cjR" secondAttribute="leading" id="2Ia-co-7kD"/>
+                                    <constraint firstItem="dEL-yo-c5D" firstAttribute="top" secondItem="CIy-dl-cjR" secondAttribute="top" id="4IO-IC-lSb"/>
+                                    <constraint firstAttribute="bottom" secondItem="dEL-yo-c5D" secondAttribute="bottom" id="gHY-Uw-4nc"/>
+                                    <constraint firstAttribute="trailing" secondItem="dEL-yo-c5D" secondAttribute="trailing" id="vhr-Dz-34i"/>
                                 </constraints>
-                                <viewLayoutGuide key="contentLayoutGuide" id="koq-DK-9LJ"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="b6Z-yB-JQx"/>
-                            </scrollView>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="POB-Vr-W15" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="5QQ-mX-whM"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="POB-Vr-W15" secondAttribute="bottom" id="Dvs-SQ-B4A"/>
-                            <constraint firstItem="POB-Vr-W15" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Hgs-30-idv"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="POB-Vr-W15" secondAttribute="trailing" id="PSJ-JO-bMp"/>
+                            <constraint firstItem="CIy-dl-cjR" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="TZ9-A9-jng"/>
+                            <constraint firstItem="CIy-dl-cjR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="WGl-9K-mBk"/>
+                            <constraint firstAttribute="bottom" secondItem="CIy-dl-cjR" secondAttribute="bottom" id="gdG-yp-f1V"/>
+                            <constraint firstItem="CIy-dl-cjR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="rG0-CY-rjW"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="O9K-hF-qXA"/>
                     <connections>
                         <outlet property="collectionView" destination="dEL-yo-c5D" id="Pbg-ZJ-oNu"/>
+                        <outlet property="contentView" destination="CIy-dl-cjR" id="hWd-k3-cra"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

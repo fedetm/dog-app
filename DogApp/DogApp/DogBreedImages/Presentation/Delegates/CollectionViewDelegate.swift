@@ -42,10 +42,10 @@ class CollectionViewDelegate: NSObject, UICollectionViewDelegate, UICollectionVi
   }
   
   func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-    let width = collectionView.bounds.width
+    let width = view.contentView.bounds.width
     
     let dogBreedUIImage = view.dogBreedUIImages[indexPath.row]
-    let height: CGFloat = dogBreedUIImage.size.height / 0.75
+    let height: CGFloat = dogBreedUIImage.size.height
     
     return CGSize(width: width, height: height)
   }

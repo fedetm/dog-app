@@ -8,6 +8,7 @@
 import UIKit
 
 class DogBreedImagesView: UIViewController {
+  @IBOutlet weak var contentView: UIView!
   @IBOutlet weak var collectionView: UICollectionView!
   
   var presenter: IDogBreedImagesPresenter!
